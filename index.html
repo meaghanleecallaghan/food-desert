@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="a jquery hotspot with auto delay slideshow">
+  <meta name="keywords" content="jquery, hotspot, slideshow">
+  <meta name="author" content="sike">
+
+  <title>jQuery Hotspot Plugin with Slideshow</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="jquery.1.9.1.min.js"></script>
+  <script src="modernizr.custom.49511.js"></script>
+  <script src="main.js"></script>
+
+  <script>
+    jQuery(document).ready(function($) {
+        $('#container1').hotSpot({
+          slideshow : true, /*true or false */
+        });
+
+        var _pop2 = $('#container2').hotSpot({
+            slideshow : false,
+            // triggerBy : 'click',
+            autoHide : false
+        });
+
+        $('#image2').on('click', function(event) {
+            _pop2.hideCurrentPop();
+        });
+    });
+  </script>
+</head>
+<body>
+  <h1>Access to Healthy Food Is Not As Simple As Adding More Grocery Stores</h1>
+  <h2>More study is finding a complex answer to solving the city's food deserts</h2>
+  <div id="byline">By: Meg Callaghan & Thom Leavy</div>
+  <div> <p>With limited time in the day and money in the pocket, bad habits are easy to form out of convenience and necessity. It’s why eating out of convenience stores is necessary for so many people, and fast food often trumps healthy living.</p>
+
+<p>Picture an average minimum wage worker. She takes the C train from Brooklyn to work retail in Manhattan. She forgets her metrocard at work, and has to use the $5 in her pocket at the subway. It leaves her with just over $2 to eat when she gets back off at her stop, and she readily hands it to her local bodega owner for a single serving of Cup Noodles.</p>
+
+<p>It’s a hot meal. It even has little vegetables in it. It’s better than nothing, and she doesn’t go to bed on an empty stomach.</p>
+
+<p>The truth? It’s penny wise, pound foolish eating-- it doesn’t really feed you. Hearty Chicken Flavor Cup Noodles has 790 mg of sodium, 36 g of carbohydrates, and tends to leave you hungry. It’s not a solution to a single growling stomach, and it’s not a solution for the long term.</p>
+
+</div>
+
+<div class="container" id="container1">
+  <h2>Government research collected at <a href="http://www.fitness.gov">fitness.gov</a> paints a grave picture of the the American diet.</h2>
+  <div class="popover right pop1" data-easein="cardInRight" data-easeout="cardOutRight" id="pop1">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>More than 23 million Americans, including 6.5 million children, live in food deserts.</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="popover top pop2" data-easein="cardInTop" data-easeout="cardOutTop" id="pop2">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>In 2008, an over 49 million people, over 16 million of them children, experienced ‘food insecurity’ multiple times.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="popover left pop3" data-easein="cardInLeft" data-easeout="cardOutLeft" id="pop3">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>Empty calories from added sugars and solid fats make up 40% of total daily calories in Americans 18 and under.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="popover bottom pop4" data-easein="cardInBottom" data-easeout="cardOutBottom" id="pop4">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>Food insecurity is not just a lack of food, but a lack of nutritional food-- rising to 15% in 2009.</p>
+      </div>
+    </div>
+  </div>
+
+  <img src="arrow1.png" alt="info" class="info-icon info-icon1" data-target="pop1"  />
+  <img src="arrow1.png" alt="info" class="info-icon info-icon2" data-target="pop2"  />
+  <img src="arrow1.png" alt="info" class="info-icon info-icon3" data-target="pop3"  />
+  <img src="arrow1.png" alt="info" class="info-icon info-icon4" data-target="pop4"  />
+  <img src="leavy-fooddesert-paying.jpg" alt="Women at Counter" class="largeimage">
+
+</div>
+<div><p>When Momofuku Ando invented instant ramen noodles in Japan in 1958, the public initially scoffed at the new product. But at the price decreased and the era of convenient food took off, so did those eating instant noodles. TV dinners and the like were not just marketed well, but offered a freedom from the costliness of home cooking, saving time and money with simplicity.</p>
+
+<p>Today, Cup Noodle is a global brand, the Coca Cola of single serving instant dinner. There are other instant products, at least according to the global sales, that support microwavable meals being eaten in the millions. </p>
+
+<p>What’s not convenient for consumers is that more and more, these products are linked to diseases like obesity. Research shows that these illnesses fall disproportionately on the poor. </p>
+
+<p>The reasons why the poor rely on this kind of food are multifaceted, but until recently, talking heads pinpointed the reason in on location of stores and access, specifically the ‘food desert’-- expanses of the urban landscape where small corner stores were many, and full scale grocers were few. </p>
+
+<p>The USDA defines a food desert as “parts of the country vapid of fresh fruit, vegetables, and other healthful whole foods, usually found in impoverished areas [...] largely due to a lack of grocery stores, farmers’ markets, and healthy food providers.”</p>
+
+<p>They go on to describe local “quickie marts” as part of the problem with their “wealth of processed, sugar, and fat laden foods that are known contributors to our nation’s obesity epidemic.” These “low-access communities” must have at least 500 people (or 33 percent of the census tract’s population) living a mile or more away from a supermarket or large grocery store without a car-- expanding the range to ten miles for rural areas.</p>
+
+ <p>While adding more or better stores was thought of as a cure-all, recent research has found that adding a new grocery store on the block. Neighborhoods still continue to buy and eat the same foods. Food inequality is too complex for one panacea. </p>
+
+</div>
+
+<div class="container" id="container2">
+  <h2>Penny wise, pound foolish eating.</h2>
+  <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="pop5">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>Obesity related illness, including chronic disease, disability, and death costs America $190.2 billion annually.</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="popover right" data-easein="cardInRight" data-easeout="cardOutRight" id="pop6">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>It’s estimated that this will balloon to 21 percent of healthcare costs in 2018, or $344 billion annually.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="pop7">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>Obesity is expensive-- medical costs for the obese are on average 42 percent higher of those at normal weight.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="popover bottom" data-easein="cardInBottom" data-easeout="cardOutBottom" id="pop8">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>It’s even a threat to national security-- 27 percent of potential recruits are too overweight to serve in the military.</p>
+      </div>
+    </div>
+  </div>
+
+  <img src="arrow2.png" alt="info" class="info-icon info-icon1" data-target="pop5"  />
+  <img src="arrow2.png" alt="info" class="info-icon info-icon2" data-target="pop6"  />
+  <img src="arrow2.png" alt="info" class="info-icon info-icon3" data-target="pop7"  />
+  <img src="arrow2.png" alt="info" class="info-icon info-icon4" data-target="pop8"  />
+  <img src="leavy-fooddesert-cans.jpg" alt="" class="largeimage" id="image2">
+</div>
+<div> <p>Corner stores and bodegas are cheap and convenient. The name, bodega, and the business model are of Latino origins-- they catered to the needs of Central and South America’s poor.</p>
+
+<p>This is not to disparage all small business owners: the definition and fare of a bodega is not universal: there are some, like Concord Market in Brooklyn, that far exceed what one would typically expect from a bodega: no flies, a polished interior, and a variety of organic options. The difference? It’s located near Brooklyn Heights, where the mouths of the Manhattan Bridge and the Brooklyn Bridge meet. They make crab cakes, have a burrito bar, and blend fresh smoothies. They’ll take your order on the phone, or online, and deliver it to you.</p>
+
+<p>And some of the less upscale bodegas make an effort to offer the fixings for a home cooked meal. They may boast a small delicatessen for a relatively fresh sandwich. The same can’t be said for their corporate counterparts, like 7-11, where the low fat options are the odd apple by the register, atop sugar free gum. The rest is individually wrapped, or slowly drying out under heat lamps and on rollers: cheese dogs, mini tacos, and frozen pizza glistening with grease.</p>
+
+<p>The <a href=”http://www.ers.usda.gov/data-products/food-access-research-atlas.aspx”>USDA Food Access Research Atlas</a> shows that in New York City, neighborhoods like Pelham, Woodside, Rego Park, East Elmhurst, Rockaway Park, Sunnyside, and Ridgewood have bad access to good food. Just across the Hudson, the density of poverty and scarcity of food appears more dire on the map’s visuals.</p></div>
+
+<div class="container" id="container3">
+  <h2>The The Journal of the American Medical Association Internal Medicine (JAMAIM) found that while 2005-2010 marked an increase in good eating, but not across the board-- much like the widening of income inequality gaps, so have dietary inequality gaps based on income.</h2>
+  <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="pop9">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>Legislators have put restrictions on shopping with SNAP (Supplemental Nutrition Assistance Program) funds for items like steak and cake in an effort to steer the low income diet of America.</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="popover right" data-easein="cardInRight" data-easeout="cardOutRight" id="pop10">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>The minority population is statistically most at risk: Black adult obesity rates have gone up 8 percent since 2002, 10 percent for Latinos. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="pop11">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>Minority youth are in greater danger to--84 percent of kid-targeted food ads on Spanish language television promote food with a low nutritional value. Black children see twice as many calories advertised in fast food commercials as white kids.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="popover bottom" data-easein="cardInBottom" data-easeout="cardOutBottom" id="pop12">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>The good news: New York is the 11th lowest obesity rate in 2014, according to the CDC. The bad news: That’s a whopping 27 percent.</p>
+      </div>
+    </div>
+  </div>
+
+  <img src="arrow2.png" alt="info" class="info-icon info-icon1" data-target="pop9"  />
+  <img src="arrow2.png" alt="info" class="info-icon info-icon2" data-target="pop10"  />
+  <img src="arrow2.png" alt="info" class="info-icon info-icon3" data-target="pop11"  />
+  <img src="arrow2.png" alt="info" class="info-icon info-icon4" data-target="pop12"  />
+  <img src="leavy-fooddesert-pringles.jpg" alt="" class="largeimage" id="image2">
+</div>
+
+</body>
+</html>
